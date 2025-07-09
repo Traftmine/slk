@@ -131,8 +131,12 @@ def process_directory(input_dir, output_dir=None):
     return processed_files
 
 if __name__ == "__main__":
-    path = 'data/raw/2023'
-    output_dir = 'data/processed/2023'
+    if len(sys.argv) > 2:
+        path = sys.argv[1]
+        output_dir = sys.argv[2]
+    else:
+        print("Missing arguments")
+
     # Start timing
     start_time = t.time()
 
