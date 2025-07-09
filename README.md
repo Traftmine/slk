@@ -1,6 +1,6 @@
 # SLK Management Library
 
-This code is to convert SLK format files to CSV format files.
+This code convert SLK format files to CSV format files.
 
 To use it : 
 ```Bash
